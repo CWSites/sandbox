@@ -14,18 +14,28 @@ This includes Next.js' built-in support for Global CSS, CSS Modules and TypeScri
 
 Quickly get started using [Create Next App](https://github.com/vercel/next.js/tree/canary/packages/create-next-app#readme)!
 
-In your terminal, run the following command:
+In your terminal, run the following command with `npx` or `yarn`:
 
 ```bash
 npx create-next-app --example with-jest with-jest-app
 ```
 
-```bash
-yarn create next-app --example with-jest with-jest-app
-```
+## Run the Dev Server
 
 ```bash
-pnpm create next-app --example with-jest with-jest-app
+npm run dev
+```
+
+## Build for Production
+
+```bash
+npm run build
+```
+
+## Run in Production Mode
+
+```bash
+npm start
 ```
 
 ## Running Tests
@@ -33,3 +43,9 @@ pnpm create next-app --example with-jest with-jest-app
 ```bash
 npm test
 ```
+
+# UI Architecture
+
+## Page Setup
+
+To make a new page publicly accessible, add it to the `app` directory. For example, to create a new page at the path `/about`, create a new file at `pages/page.tsx`. This will automatically create a new route. You can also create nested routes by creating a new file at `app/nested/page.tsx` for the path `/nested/page`.

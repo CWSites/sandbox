@@ -1,15 +1,27 @@
 // localhost:3000/
 
 export const metadata = {
-  title: "App Router",
+  title: "Welcome to my Sandbox",
 };
 
 export default function Page() {
   return (
-    <>
-      <h1>App Router</h1>
-      <a href="/home">Home</a> | <a href="/blog/first-post">Blog Post</a> |{" "}
-      <a href="/sandbox">Sandbox</a>
-    </>
+    <main>
+      <h1>Welcome to my Sandbox</h1>
+      <ul>
+        <li>
+          <a href="/countries">Countries</a>
+        </li>
+        <li>
+          <a href="/schools">Schools</a>
+        </li>
+        <li>
+          <a href="/codametrix">Codametrix</a>
+        </li>
+        <li>
+          <a href="/roomba">Roomba</a>
+        </li>
+      </ul>
+    </main>
   );
 }

@@ -3,15 +3,15 @@
  */
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
-import Sandbox from ".";
+import Page from ".";
 
 describe("Sandbox", () => {
   beforeEach(() => {
-    render(<Sandbox title="Photon" />);
+    render(<Page />);
   });
 
   it("displays the page heading", () => {
     const pageHeading = screen.getAllByRole("heading");
-    expect(pageHeading[0]).toHaveTextContent("Roomba");
+    expect(pageHeading[0]).toHaveTextContent("Stable Kernel");
   });
 });
